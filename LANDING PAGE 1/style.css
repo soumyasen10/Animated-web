@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(176, 135, 138);
+    display: flex;
+}
+#part1{
+    height: 100%;
+    width: 26%;
+    /* background-color: red; */
+}
+#part2{
+    height: 100%;
+    width: 67%;
+    background-color: rgb(51, 56, 107);
+    background-image: url("https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+    background-size: cover;
+    background-position: center;
+}
+#part3{
+    height: 100%;
+    width: 7%;
+    /* background-color: rgb(27, 146, 61); */
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #372020c3;
+}
+.text{
+    /* height: 300px; */
+    position: absolute;
+    width: 400px;
+    /* background-color: red; */
+    left: 7%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.text>h1{
+    font-size: 95px;
+    font-family: gilroy;
+    font-weight: 900px;
+    line-height: 80%;
+    color: #fff;
+    letter-spacing: 8px;
+}
+#small-img{
+    height: 400px;
+    width: 300px;
+    background-image: url(https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+}
+.overlay2{
+    height: 100%;
+    width: 100%;
+    background-color: #49424283;
+}
+.verticle{
+    position: absolute;
+    transform: rotate(90deg);
+    right: -60%;
+    top: -7%;
+    transform-origin: 0% 0%;
+    /* width: 100%; */
+    /* background-color: red; */
+
+}
+.verticle>h1{
+    font-size: 70px;
+    font-weight: 900;
+    color: transparent;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke-width:2px ;
+    -webkit-text-stroke-color: #fff;
+    letter-spacing: 15px;
+
+    /* transform-origin: 0% 0%; */
+}
+.nav{
+    position: absolute;
+    width: 350px;
+    left: 7%;
+    top: 5%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav>img{
+    height: 60px;
+
+}
+.nav>h5{
+    font-size: 20px;
+    color: #fff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}

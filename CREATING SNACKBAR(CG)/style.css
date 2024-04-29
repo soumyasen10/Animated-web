@@ -1,0 +1,19 @@
+.hero{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.hi{
+height: 200px;
+width: 200px;
+background-color: aqua;
+}
+.hello{
+height: 300px;
+width: 300px;
+background-color: rgb(65, 5, 36);
+}

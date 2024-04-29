@@ -1,0 +1,125 @@
+@font-face {
+    font-family:zayan;
+    src: url(./Cooper\ Light\ BT.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: zayan;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+nav>.part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav>h1{
+    font-size: 30px;
+    font-weight: 300;
+}
+nav>.part2>a{
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+}
+nav>.part2>a:nth-last-child(1){
+    padding: 7px 18px;
+    border-radius: 50px ;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+.green{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+    top: 0%;
+    left: -100%;
+}
+nav>.part2>a:nth-last-child(1):hover>.green{
+    left: 0%;
+    transition: left 0.4s ease;
+}
+nav>.part2>a:nth-last-child(1)>h5{
+    font-weight: 500;
+    z-index: 9;
+    position: relative;
+}
+.main>h1{
+    position: relative;
+    width: 50%;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 100;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main>h1::after{
+    content: "";
+    width: 40%;
+    position: absolute;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom:-2%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.main>.ione{
+    height: 400px;
+    width: 290px;
+    left: 5%;
+    top: 20%;
+    position: absolute;
+    object-fit: cover;
+}
+.main>.itwo{
+    height: 280px;
+    width: 270px;
+    right: 22%;
+    top: 15%;
+    position: absolute;
+    object-fit: cover;
+}
+.main>.ithree{
+    height: 220px;
+    width: 220px;
+    right: -79%;
+    bottom: -39%;
+    position: relative;
+    object-fit: cover;
+}
+.main>img{
+    transition: margin 0.8s ease ;
+}
+.main>img>.ithree{
+    transition: margin 0.8s ease ;
+}
+.main>img:hover{
+    margin-top: -20px;
+}
+.main>img>.ithree:hover{
+    margin-top: -20px;
+}
